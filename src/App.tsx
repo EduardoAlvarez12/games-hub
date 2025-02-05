@@ -12,10 +12,10 @@ function App() {
       <GridItem area={"nav"}>
         <NavBar/>
       </GridItem>
-      <GridItem display={{ base: "none", lg: "block"}} area={"aside"} bg={"gold"}>
+      <GridItem display={{ base: "none", lg: "block"}} area={"aside"}>
         Aside
       </GridItem>
-      <GridItem area={"main"} bg={"dodgerblue"}>
+      <GridItem area={"main"}>
         Main
       </GridItem>
     </Grid>

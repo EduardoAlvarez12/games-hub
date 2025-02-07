@@ -3,7 +3,7 @@ import getCroppedImageUrl from "@/services/image-url";
 import { HStack, Image, List, Text, Spinner } from "@chakra-ui/react";
 
 const GenreList = () => {
-  const { genres, isLoading, error } = useGenres();
+  const { data, isLoading, error } = useGenres();
 
   if (error) return null;
   
@@ -12,7 +12,7 @@ const GenreList = () => {
   return (
     <List.Root variant={"plain"}>
       
-      {genres.map((genre) => (
+      {data.map((genre) => (
         <List.Item paddingY={"5px"} key={genre.id}>
           <HStack>
             <Image

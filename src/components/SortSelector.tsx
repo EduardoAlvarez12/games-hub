@@ -8,7 +8,7 @@ import {
 import { BsChevronDown } from "react-icons/bs";
 
 interface Props {
-  onSelectSortOrder: (order: string) => void;
+  onSelectSortOrder: (sortOrder: string) => void;
   sortOrder: string;
 }
 
@@ -23,6 +23,7 @@ const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
   ];
 
   const currentSortOrder = sortOrders.find(order => order.value === sortOrder);
+  
   return (
     <MenuRoot>
       <MenuTrigger asChild>
